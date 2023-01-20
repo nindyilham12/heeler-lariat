@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    div:focus .two,
+    div:focus~.two {
+        background-color: #FFFBF4;
+    }
+
+    div:focus .one,
+    div:focus~.one {
+        background-color: #BC995F;
+    }
+
+    .slide-arrow {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .wrapper-ighov {
+        width: 100%;
+        padding-top: 42px;
+    }
+
+    .wrapper-ighov .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+    }
+
+    .carousel-ighov {
+        width: 100%;
+        margin: 0;
+    }
+
+    .carousel-ighov .slick-dots {
+        position: relative;
+        bottom: 10px;
+        margin-top: 20px
+    }
+
+    .carousel-ighov .slick-slide {
+        margin: 10px;
+    }
+
+    .carousel-ighov .slick-dots li button:before {
+        color: transparent;
+        border: 1px solid white;
+        opacity: 1;
+    }
+
+    .carousel-ighov .slick-dots li button:before {
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .carousel-ighov .slick-dots li.slick-active button:before {
+        color: white;
+        opacity: 1;
+        background: white;
+    }
+
+
+
+    .wrapper-ban {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrapper-ban .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+    }
+
+    .carousel-ban {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .carousel-ban .slick-list {
+        padding: 0 !important;
+    }
+
+    .carousel-ban .slick-dots li button:before {
+        color: transparent;
+        border: 1px solid white;
+        opacity: 1;
+    }
+
+    .carousel-ban .slick-dots li button:before {
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .carousel-ban .slick-dots li.slick-active button:before {
+        color: white;
+        opacity: 1;
+        background: white;
+    }
+
+    .carousel-ban .slick-dots {
+        margin-left: 0px;
+        text-align: center;
+        bottom: 45px;
+    }
+
+    @media (min-width: 1536px) {
+        .slick-dots-container {
+            max-width: 1536px;
+            position: relative;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .carousel-ban .slick-dots {
+            text-align: left;
+            padding-left: 90px;
+        }
+    }
+
+
+    .wrapper-rev {
+        width: 100%;
+        position: relative;
+    }
+
+    .wrapper-rev .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+    }
+
+    .carousel-rev {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .carousel-rev .slick-list {
+        padding: 0 !important;
+    }
+
+    .carousel-rev .slick-dots li button:before {
+        color: transparent;
+        border: 1px solid white;
+        opacity: 1;
+    }
+
+    .carousel-rev .slick-dots li button:before {
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .carousel-rev .slick-dots li.slick-active button:before {
+        color: white;
+        opacity: 1;
+        background: white;
+    }
+
+    .carousel-rev .slick-dots {
+        text-align: center;
+        bottom: 30px;
+    }
+
+    @media (min-width: 1536px) {
+        .carousel-rev {
+            width: 1118px;
+            max-width: 1536px;
+        }
+    }
+
+
+
+    .wrapper-det {
+        width: 100%;
+    }
+
+    .carousel-det {
+        width: 100%;
+    }
+
+    .carousel-det .slick-list {
+        padding: 0 !important;
+    }
+
+    .carousel-det .slick-slide {
+        margin-left: 10px;
+    }
+
+    .carousel-det .slick-list {
+        margin-left: -10px;
+    }
+
+    @media (min-width: 1024px) {
+        .carousel-det .slick-slide {
+            margin-left: 14px;
+        }
+
+        .carousel-det .slick-list {
+            margin-left: -14px;
+        }
+    }
+
+    .wrapper-thumbnail {
+        width: 100%;
+    }
+
+    .carousel-thumbnail {
+        width: 100%;
+    }
+
+    .carousel-thumbnail .slick-slide {
+        margin-left: 10px;
+    }
+
+    .carousel-thumbnail .slick-list {
+        margin-left: -10px;
+    }
+
+    .carousel-thumbnail .slide-arrow {
+        top: 0;
+    }
+
+    @media (min-width: 1024px) {
+        .carousel-thumbnail .slick-slide {
+            margin-left: 14px;
+        }
+
+        .carousel-thumbnail .slick-list {
+            margin-left: -14px;
+        }
+    }
+
+}
