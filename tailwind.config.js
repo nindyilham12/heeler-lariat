@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        'bgBanner': "linear-gradient(270deg, #222222 0%, rgba(34, 34, 34, 0) 29.83%), linear-gradient(0deg, rgba(34, 34, 34, 0.35), rgba(34, 34, 34, 0.35)), url(../images/bg-banner.png)",
+
+        
         'shopBan': "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0) 90%), url(../images/image-8.png)",
         'storyBan': "url('../images/image-7.png')",
         'storyBanFoot': 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))',
@@ -28,6 +31,7 @@ module.exports = {
       borderRadius: {
         '5': '5px',
         '10': '10px',
+        '48': '48px', //
       },
 
       borderWidth: {
@@ -36,36 +40,12 @@ module.exports = {
       },
 
       colors: {
-        'grey-1': 'F6F6F6',
-
-        'black-1': '#151515',
-        'black-2': '#575757',
-        'black-3': '#262626',
-        'black-4': '#1C1C1C',
-        'black-5': '#494949',
-        'black-6': 'rgba(0, 0, 0, 0.2)',
-        'brown-1': '#A26B25',
-        'brown-2': '#D3B178',
-        'brown-3': '#454545',
-        'brown-4': '#FFFBF4',
-        'brown-5': '#BC995F',
-        // 'gray-1': '#333333',
-        'gray-2': '#A9A9A9',
-        'gray-3': '#D1D1D1',
-        'gray-4': '#BDBDBD',
-        'gray-5': '#C4C4C4',
-        'gray-6': '#F2F2F2',
-        'gray-7': '#ECECEC',
-        'gray-8': '#E0E0E0',
-        'gray-9': '#4F4F4F',
-        'gray-10': '#828282',
-        'gray-11': '#CECECE',
-        'gray-0.5': 'rgba(242, 242, 242, 0.5)',
-        'green-1': '#6B724E',
-        'white-1': '#FAFAFA',
-        'white-2': '#F5F5F5',
-        'white-3': '#F9F9F9',
-        'yellow-1': '#FCA815'
+        'grey-1': '#F6F6F6',
+        'grey-2': '#888888',
+        'blue-1': '#00ADB5',
+        'black-1': '#222222',
+        'pink-1': '#FF537F',
+        'white-1': '#F7F7F7',
       },
 
       boxShadow: {
@@ -85,9 +65,12 @@ module.exports = {
         '24': '24px',
         '26': '26px',
         '28': '28px',
-        '32': '32px',
+        '32': '32px',//
         '36': '36px',
         '40': '40px',
+        '48': '48px', //
+        '64': '64px', //
+
       },
 
       fontFamily: {
@@ -103,11 +86,13 @@ module.exports = {
         '23': '23px',
         '27': '27px',
         '29': '29px',
+        '33': '33px', //
         '38': '38px',
         '39': '39px',
-        '43': '43px',
+        '42': '42px', //
         '45': '45px',
-        '48': '48px'
+        '48': '48px', //
+        '75': '75px', //
       },
 
       //padding, margin, width, height, maxHeight, flex-basis, 
@@ -133,11 +118,11 @@ module.exports = {
         '36': '36px',
         '37': '37px',
         '41': '41px',
-        '42': '42px',
+        '42': '42px', //
         '43': '43px',
         '45': '45px',
-        '48': '48px', //dipake
-        '50': '50px',
+        '48': '48px', //
+        '50': '50px', //
         '51': '51px',
         '53': '53px',
         '54': '54px',
@@ -145,7 +130,7 @@ module.exports = {
         '56': '56px',
         '57': '57px',
         '60': '60px',
-        '65': '65px',
+        '64': '64px', //
         '68': '68px',
         '72': '72px',
         '74': '74px',
@@ -161,7 +146,7 @@ module.exports = {
         '100': '100px',
         '108': '108px',
         '122': '122px',
-        '130': '130px',
+        '130': '130px', //
         '135': '135px',
         '142': '142px',
         '150': '150px',
@@ -171,7 +156,7 @@ module.exports = {
         '182': '182px',
         '190': '190px',
         '217': '217px',
-        '269': '269px',
+        '269': '269px', //
         '290': '290px',
         '319': '319px',
         '333': '333px',
