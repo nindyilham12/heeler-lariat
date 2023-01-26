@@ -16,59 +16,22 @@
         scrollbar-width: none;
     }
 
-    div:focus .two,
-    div:focus~.two {
-        background-color: #FFFBF4;
-    }
-
-    div:focus .one,
-    div:focus~.one {
-        background-color: #BC995F;
-    }
-
     .slide-arrow {
         position: absolute;
         bottom: 0;
     }
 
-    .wrapper-ighov {
+    .wrapper-lp {
         width: 100%;
         padding-top: 42px;
     }
 
-    .wrapper-ighov .slick-dotted.slick-slider {
-        margin-bottom: 0px;
-    }
-
-    .carousel-ighov {
+    .carousel-lp {
         width: 100%;
         margin: 0;
     }
 
-    .carousel-ighov .slick-dots {
-        position: relative;
-    }
-
-    .carousel-ighov .slick-slide {
+    .carousel-lp .slick-slide {
         margin: 10px;
     }
-
-    .wrapper-rev {
-        width: 100%;
-        position: relative;
-    }
-
-    .carousel-rev {
-        text-align: center;
-        width: 100%;
-        margin: auto;
-    }
-
-    @media (min-width: 1536px) {
-        .carousel-rev {
-            width: 1118px;
-            max-width: 1536px;
-        }
-    }
-
 }
