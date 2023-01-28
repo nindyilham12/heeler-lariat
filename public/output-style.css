@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 /*
-! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -34,6 +34,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
 */
 
 html {
@@ -48,6 +49,8 @@ html {
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
 }
 
 /*
@@ -359,13 +362,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -421,54 +417,13 @@ video {
   height: auto;
 }
 
-*, ::before, ::after{
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
 }
 
-::-webkit-backdrop{
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -642,6 +597,14 @@ video {
   margin-right: 1rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mb-48{
+  margin-bottom: 48px;
+}
+
 .block{
   display: block;
 }
@@ -674,12 +637,12 @@ video {
   height: 100%;
 }
 
-.h-48{
-  height: 48px;
-}
-
 .h-21{
   height: 21px;
+}
+
+.h-48{
+  height: 48px;
 }
 
 .w-full{
@@ -698,12 +661,17 @@ video {
   width: 130px;
 }
 
+.w-80{
+  width: 80px;
+}
+
 .w-106{
   width: 106px;
 }
 
-.w-80{
-  width: 80px;
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .grid-cols-6{
@@ -783,6 +751,12 @@ video {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -795,9 +769,25 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
 .rounded-t-48{
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-t{
+  border-top-width: 1px;
+}
+
+.border-t-2{
+  border-top-width: 2px;
 }
 
 .bg-black-1{
@@ -912,6 +902,26 @@ video {
   padding-right: 50px;
 }
 
+.py-9{
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-66{
   padding-bottom: 66px;
 }
@@ -948,8 +958,12 @@ video {
   padding-top: 1rem;
 }
 
-.pt-6{
-  padding-top: 1.5rem;
+.pt-12{
+  padding-top: 3rem;
+}
+
+.pb-48{
+  padding-bottom: 48px;
 }
 
 .text-left{
@@ -992,6 +1006,10 @@ video {
   font-size: 12px;
 }
 
+.text-10{
+  font-size: 10px;
+}
+
 .font-medium{
   font-weight: 500;
 }
@@ -1002,6 +1020,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .leading-7{
@@ -1022,6 +1044,18 @@ video {
 
 .leading-3{
   line-height: .75rem;
+}
+
+.leading-14{
+  line-height: 14px;
+}
+
+.leading-10{
+  line-height: 10px;
+}
+
+.leading-8{
+  line-height: 2rem;
 }
 
 .text-white{
@@ -1052,6 +1086,20 @@ video {
 .text-grey-2{
   --tw-text-opacity: 1;
   color: rgb(136 136 136 / var(--tw-text-opacity));
+}
+
+.text-pink-1{
+  --tw-text-opacity: 1;
+  color: rgb(255 83 127 / var(--tw-text-opacity));
+}
+
+.text-grey-4{
+  --tw-text-opacity: 1;
+  color: rgb(238 239 244 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .wrapper-lp {
@@ -1105,6 +1153,10 @@ video {
     position: relative;
   }
 
+  .lg\:mt-8{
+    margin-top: 2rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1122,13 +1174,8 @@ video {
   }
 
   .lg\:h-fit{
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-  }
-
-  .lg\:h-screen{
-    height: 100vh;
   }
 
   .lg\:w-full{
@@ -1140,13 +1187,8 @@ video {
   }
 
   .lg\:w-fit{
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .lg\:w-screen{
-    width: 100vw;
   }
 
   .lg\:grid-cols-5{
@@ -1165,6 +1207,10 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:rounded-32{
+    border-radius: 32px;
   }
 
   .lg\:bg-transparent{
@@ -1211,6 +1257,21 @@ video {
     padding-bottom: 26px;
   }
 
+  .lg\:py-72{
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .lg\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .lg\:pb-312{
     padding-bottom: 312px;
   }
@@ -1237,6 +1298,10 @@ video {
 
   .lg\:pt-48{
     padding-top: 48px;
+  }
+
+  .lg\:pt-100{
+    padding-top: 100px;
   }
 
   .lg\:pb-130{
@@ -1277,6 +1342,14 @@ video {
 
   .lg\:leading-33{
     line-height: 33px;
+  }
+
+  .lg\:leading-7{
+    line-height: 1.75rem;
+  }
+
+  .lg\:leading-56{
+    line-height: 56px;
   }
 
   .lg\:backdrop-blur-sm{
