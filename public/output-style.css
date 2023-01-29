@@ -907,14 +907,14 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-10{
@@ -955,6 +955,11 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pt-24{
@@ -1334,6 +1339,11 @@ video {
     padding-bottom: 26px;
   }
 
+  .lg\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .lg\:px-100{
     padding-left: 100px;
     padding-right: 100px;
@@ -1347,11 +1357,6 @@ video {
   .lg\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .lg\:py-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .lg\:pt-52{
