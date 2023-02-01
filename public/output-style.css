@@ -649,6 +649,10 @@ video {
   height: 3rem;
 }
 
+.h-62{
+  height: 62px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -675,6 +679,10 @@ video {
 
 .w-106{
   width: 106px;
+}
+
+.w-62{
+  width: 62px;
 }
 
 .w-fit{
@@ -726,16 +734,12 @@ video {
   gap: 0.25rem;
 }
 
-.gap-8{
-  gap: 2rem;
+.gap-2{
+  gap: 0.5rem;
 }
 
 .gap-4{
   gap: 1rem;
-}
-
-.gap-2{
-  gap: 0.5rem;
 }
 
 .gap-x-12{
@@ -780,6 +784,12 @@ video {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .space-x-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -809,6 +819,11 @@ video {
 .rounded-t-48{
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
+}
+
+.rounded-r-none{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .border{
@@ -1173,11 +1188,6 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.wrapper-lp {
-  width: 100%;
-  padding-top: 42px;
-}
-
 .carousel-lp {
   width: 100%;
   margin: 0;
@@ -1299,6 +1309,10 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1313,10 +1327,6 @@ video {
 
   .lg\:gap-8{
     gap: 2rem;
-  }
-
-  .lg\:gap-4{
-    gap: 1rem;
   }
 
   .lg\:gap-x-0{
@@ -1378,6 +1388,11 @@ video {
     padding-bottom: 1rem;
   }
 
+  .lg\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .lg\:px-31{
     padding-left: 31px;
     padding-right: 31px;
@@ -1416,11 +1431,6 @@ video {
   .lg\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .lg\:py-6{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 
   .lg\:pt-52{
