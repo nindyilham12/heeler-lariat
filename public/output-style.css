@@ -579,16 +579,16 @@ video {
   top: 0px;
 }
 
+.left-8{
+  left: 2rem;
+}
+
 .z-50{
   z-index: 50;
 }
 
 .m-auto{
   margin: auto;
-}
-
-.m-0{
-  margin: 0px;
 }
 
 .mx-auto{
@@ -601,21 +601,12 @@ video {
   margin-right: 1rem;
 }
 
-.mx-0{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .mt-2{
   margin-top: 0.5rem;
 }
 
 .mb-12{
   margin-bottom: 3rem;
-}
-
-.ml-0{
-  margin-left: 0px;
 }
 
 .block{
@@ -626,8 +617,16 @@ video {
   display: flex;
 }
 
+.inline-flex{
+  display: inline-flex;
+}
+
 .grid{
   display: grid;
+}
+
+.inline-grid{
+  display: inline-grid;
 }
 
 .hidden{
@@ -664,6 +663,10 @@ video {
 
 .h-62{
   height: 62px;
+}
+
+.h-32{
+  height: 8rem;
 }
 
 .w-full{
@@ -1231,11 +1234,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.focus\:text-blue-1:focus{
-  --tw-text-opacity: 1;
-  color: rgb(0 173 181 / var(--tw-text-opacity));
-}
-
 .active\:text-blue-1:active{
   --tw-text-opacity: 1;
   color: rgb(0 173 181 / var(--tw-text-opacity));
@@ -1245,11 +1243,6 @@ video {
   .md\:mx-100{
     margin-left: 100px;
     margin-right: 100px;
-  }
-
-  .md\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .md\:grid-cols-4{
@@ -1278,18 +1271,9 @@ video {
     position: relative;
   }
 
-  .lg\:m-auto{
-    margin: auto;
-  }
-
   .lg\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .lg\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .lg\:mt-8{
@@ -1562,14 +1546,6 @@ video {
 @media (min-width: 1280px){
   .xl\:m-auto{
     margin: auto;
-  }
-
-  .xl\:block{
-    display: block;
-  }
-
-  .xl\:hidden{
-    display: none;
   }
 
   .xl\:grid-cols-3{
