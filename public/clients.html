@@ -8,14 +8,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <title>Hexa Creative Studio | Our Projects</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <title>Hexa Creative Studio | Home</title>
 </head>
 
 <body>
     <!--Navbar-->
-    <div class="fixed w-full z-50 bg-black-1">
+    <div class="fixed w-full z-50 bg-black-1/50 backdrop-blur-25">
         <header class="2xl:container mx-auto px-4 md:px-100 py-3 lg:py-5">
-            <div class="flex justify-between items-center">
+            <nav class="flex justify-between items-center">
                 <a class="block overflow-hidden" href="index.html">
                     <img class="h-8 lg:h-full w-16 lg:w-full object-cover" src="images/logo.png" alt="Hexa">
                 </a>
@@ -39,12 +42,12 @@
                         </div>
                     </button>
                     <div id="toggle-menu"
-                        class="hidden lg:block bg-black-1 justify-center font-medium font-work-sans text-grey-1 text-20 lg:text-24 left-0 top-0 leading-7 text-left bg-black-4 lg:bg-transparent fixed h-screen w-screen flex flex-col lg:relative lg:w-auto lg:h-auto">
+                        class="container hidden lg:block bg-black-1 justify-center font-medium font-work-sans text-grey-1 text-20 lg:text-24 left-0 top-0 leading-7 text-left bg-black-4 lg:bg-transparent fixed h-screen w-screen flex flex-col lg:relative lg:w-auto lg:h-auto">
                         <ul class="flex flex-col lg:flex-row gap-x-12 gap-y-42 text-center">
                             <li class="hover:text-blue-1 py-2">
                                 <a href="index.html">Home</a>
                             </li>
-                            <li class="text-blue-1 py-2">
+                            <li class="hover:text-blue-1 py-2">
                                 <a href="our-projects.html">Our
                                     Projects</a>
                             </li>
@@ -52,7 +55,7 @@
                                 <a href="about-us.html">About
                                     Us</a>
                             </li>
-                            <li class="hover:text-blue-1 py-2">
+                            <li class="text-blue-1 py-2">
                                 <a href="clients.html">Clients</a>
                             </li>
                             <li class="hover:text-blue-1 py-2">
@@ -62,79 +65,36 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
     </div>
 
-    <!--BODY-->
-    <div class="bg-white top-0 w-full h-full">
-        <div class="container mx-auto px-4 md:px-100 pt-24 lg:pt-52">
-            <a href="our-projects.html" class="flex space-x-4 items-center text-pink-1">
-                <i class="fa fa-arrow-left fa-xl"></i>
-                <p class="font-work-sans text-12 lg:text-24 font-semibold leading-14 lg:leading-7">Back to Projects</p>
-            </a>
-            <img src="images/telkomsehat-banner.png" class="w-full py-9 lg:py-72">
-            <h1 class="font-raleway text-24 text-center lg:text-64 font-bold leading-7 lg:leading-56 text-black-1">
-                Telkomsehat
-            </h1>
-            <div class="flex space-x-2 lg:space-x-6 mx-auto justify-center mt-2 lg:mt-8">
-                <div
-                    class="border-2 rounded-xl lg:rounded-32 border-blue-1 px-2 lg:px-6 py-1 lg:py-3 w-fit">
-                    <p class="text-blue-1 font-work-sans text-10 lg:text-24 leading-10 lg:leading-7">Mobile Apps</p>       
-                </div>
-                <div
-                    class="border-2 rounded-xl lg:rounded-32 border-blue-1 px-2 lg:px-6 py-1 lg:py-3 w-fit">
-                    <p class="text-blue-1 font-work-sans text-10 lg:text-24 leading-10 lg:leading-7">Landing Page</p>            
-                </div>
-                <div
-                    class="border-2 rounded-xl lg:rounded-32 border-blue-1 px-2 lg:px-6 py-1 lg:py-3 w-fit">    
-                    <p class="text-blue-1 font-work-sans text-10 lg:text-24 leading-10 lg:leading-7">Dashboard CMS</p>           
+    <div class="bg-black-1 top-0 w-full h-full">
+        <section class="container mx-auto px-4 md:px-100 pb-66 pt-24 lg:pt-52">
+            <h1 class="font-raleway text-20 lg:text-64 font-bold leading-7 lg:leading-75 text-white">Our Clients</h1>
+            <div class="container mx-auto">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-12 pt-4 lg:pt-8">
+                    <div class="m-auto rounded-2xl bg-white px-8 lg:px-31 py-21 lg:py-38">
+                        <img src="images/logo-bagidata.png">
+                    </div>
+                    <div class="mx-auto rounded-2xl bg-white px-8 lg:px-38 py-2 lg:py-26">
+                        <img src="images/logo-ahlee.png">
+                    </div>
+                    <div class="mx-auto rounded-2xl bg-white px-56 px-8 lg:px-38 py-2 lg:py-0">
+                        <img src="images/logo-telkom.png">
+                    </div>
+                    <div class="mx-auto rounded-2xl bg-white px-50 px-8 lg:px-38 py-2 lg:py-0">
+                        <img src="images/logo-mandiri.png">
+                    </div>
                 </div>
             </div>
-            <div class="py-8">
-                <div class="text-grey-4 border-t border-t-2"></div>
-            </div>
-            <div class="grid gap-4 lg:gap-8 pb-48">
-                <div class="grid gap-2 text-12 lg:text-24">
-                    <h1 class="font-raleway leading-3 lg:leading-7 font-bold text-black-1">
-                        Client
-                    </h1>
-                    <p class="font-work-sans leading-3 lg:leading-8 text-grey-3">Telkom Indonesia</p>
-                </div>
-                <div class="grid gap-2 text-12 lg:text-24">
-                    <h1 class="font-raleway leading-3 lg:leading-7 font-bold text-black-1">
-                        Responsibilities
-                    </h1>
-                    <p class="font-work-sans leading-3 lg:leading-8 text-grey-3">
-                        Handle user experience, user interface design mobile, website and content management system also
-                        copy writing. With the integration of employee health insurance.
-                    </p>
-                </div>
-                <div class="grid gap-2 text-12 lg:text-24">
-                    <h1 class="font-raleway leading-3 lg:leading-7 font-bold text-black-1">
-                        Background
-                    </h1>
-                    <p class="font-work-sans leading-3 lg:leading-8 text-grey-3">
-                        Telkomsehat provide consulting experience online health for PT Telekomunikasi Indonesia (Telkom
-                        Group) employees, we strive to facilitate access through a complete service that can be easily
-                        accessible to all employees and their families.
-                    </p>
-                </div>
-            </div>
-            <a href="https://www.telkomsehat.id/">
-                <button
-                    class="items-center mx-auto mb-12 flex space-x-4 text-14 lg:text-24 leading-7 font-semibold font-work-sans bg-pink-1 hover:bg-blue-1 rounded-lg px-6 lg:px-8 py-3 lg:py-4 text-white">
-                    <p>See Details</p>
-                    <i class="fa fa-arrow-right fa-xl"></i>
-                </button>
-            </a>
-        </div>
+        </section>
 
-        <!--FOOTER-->
+        <!--Footer-->
         <footer class="bg-white-1 rounded-t-48 px-4 md:px-100 py-6 lg:py-50">
             <div class="container mx-auto">
                 <div class="space-y-4 lg:space-y-6">
-                    <img src="images/logo-footer.png" class="w-80 lg:w-fit h-21 lg:h-fit"/>
+                    <img src="images/logo-footer.png" class="w-80 lg:w-fit h-21 lg:h-fit" />
                     <p class="text-14 lg:text-32 text-grey-2 font-work-sans leading-5 lg:leading-42">
                         Are you looking to take your business to the next level? Collaborate with us and see the
                         potential for growth and success!
@@ -171,7 +131,7 @@
                         </li>
                     </ul>
                     <a href="index.html" class="justify-start">
-                        <img src="images/logo-2.png" class="w-106 lg:w-full h-12 lg:h-fit"/>
+                        <img src="images/logo-2.png" class="w-106 lg:w-full h-12 lg:h-fit" />
 
                     </a>
                 </div>
@@ -180,6 +140,8 @@
     </div>
 
 </body>
+
+<!--SCRIPT FOR NAVBAR-->
 <script>
     var button = document.querySelector('#toggle-menu-button');
     var menu = document.querySelector('#toggle-menu');
@@ -190,6 +152,22 @@
         menu.classList.toggle('hidden');
         open.classList.toggle('hidden');
         close.classList.toggle('hidden');
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<!-- SCRIPT FOR LATEST PROJECT CAROUSEL-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.carousel-lp').slick({
+            slidesToShow: 2,
+            prevArrow: false,
+            nextArrow: false,
+            centerMode: true,
+            dots: false,
+        });
     });
 </script>
 
