@@ -7,23 +7,8 @@
 @tailwind utilities;
 
 @layer utilities {
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
-
-    .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    .slide-arrow {
-        position: absolute;
-        bottom: 0;
-    }
-
     .wrapper-lp {
         width: 100%;
-        padding-top: 42px;
     }
 
     .carousel-lp {
@@ -31,7 +16,7 @@
         margin: 0;
     }
 
-    .carousel-lp .slick-slide {
-        margin: 10px;
+    .carousel-lp .slick-list {
+        padding: 0px 50px 0px 0px!important;
     }
 }
